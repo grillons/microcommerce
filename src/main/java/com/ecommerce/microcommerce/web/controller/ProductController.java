@@ -13,7 +13,7 @@ public class ProductController {
 
     // Un produit via son id
     @GetMapping(value = "/Produits/{id}")
-    public Product afficherUnProduit(@PathVariableintid) {
+    public Product afficherUnProduit(@PathVariable int id) {
         Product product = new Product(id, new String("Aspirateur"),100 );
         return product;
     }
@@ -21,3 +21,5 @@ public class ProductController {
     //@PostMapping
     //@DeleteMapping
 }
+
+
